@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@700&display=swap');
+
+.landing-page {
+  min-height: 100vh;
+  background-color: #FAFAFA; 
+  font-family: 'Inter', sans-serif;
+  margin: -8px; 
+  color: #333;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Gradient from yellow to light green */
+  background: linear-gradient(90deg, #FFB81C 0%, #F8E08E 50%, #C4D600 100%);
+  padding: 16px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow for depth */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1E4D2B; /* Green */
+}
+
+.brand-icon {
+  color: #0052A5; /* Blue icon */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* Modern Rounded Buttons */
+.btn-outline, .btn-solid {
+  padding: 10px 24px;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1E4D2B;
+  color: #1E4D2B;
+}
+
+.btn-solid {
+  background: #1E4D2B;
+  border: 2px solid #1E4D2B;
+  color: white;
+}
+
+.btn-outline:hover { background: rgba(30, 77, 43, 0.1); }
+.btn-solid:hover { background: #15371E; transform: translateY(-2px); }
+
+/*  Hero Section  */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+/* Font */
+.hero-title {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #1E4D2B;
+  font-size: 4rem;
+  margin-bottom: 16px;
+  max-width: 800px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  color: #D2691E; 
+  font-size: 1.2rem;
+  margin-bottom: 48px;
+}
+
+.hero-subtitle strong {
+  color: #000;
+}
+
+/* Search */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 8px;
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1); 
+  width: 100%;
+  max-width: 650px;
+  border: 1px solid #E5E7EB;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+  padding-left: 16px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-button {
+  background: #C4D600; 
+  border: none;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.search-button:hover {
+  transform: scale(1.05);
+  background: #B3C400;
+}
