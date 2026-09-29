@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="landing-page">
       
-      {/* Navigation Bar */}
+      
       <nav className="navbar">
         <div className="brand">
           <span className="brand-icon">▶</span>
@@ -16,7 +16,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      
       <main className="hero-section">
         <h1 className="hero-title">
           Find Your <span className="italic-text">Community</span> Today
@@ -25,7 +25,7 @@ function App() {
           Connect with employers and gain experience at <strong>Cal Poly Pomona</strong>
         </p>
 
-        {/* Search Bar */}
+        
         <div className="search-container">
           <div className="search-input-wrapper">
             <span className="search-icon" style={{ backgroundColor: 'transparent', border: 'none' }}>💼</span>
