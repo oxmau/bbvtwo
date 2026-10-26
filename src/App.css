@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
 
 .landing-page {
   min-height: 100vh;
-  background-color: #FAFAFA; 
+  background-color: #FAFAFA;
   font-family: 'Inter', sans-serif;
-  margin: -8px; 
   color: #333;
 }
 
-/* Nav Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Gradient from yellow to light green */
   background: linear-gradient(90deg, #FFB81C 0%, #F8E08E 50%, #C4D600 100%);
   padding: 16px 40px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .brand {
@@ -25,11 +30,11 @@
   gap: 8px;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #1E4D2B; /* Green */
+  color: #1E4D2B;
 }
 
 .brand-icon {
-  color: #0052A5; /* Blue icon */
+  color: #0052A5;
 }
 
 .nav-buttons {
@@ -37,10 +42,10 @@
   gap: 16px;
 }
 
-/* Modern Rounded Buttons */
-.btn-outline, .btn-solid {
+.btn-outline,
+.btn-solid {
   padding: 10px 24px;
-  border-radius: 50px; /* Pill shape */
+  border-radius: 50px;
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
@@ -59,10 +64,15 @@
   color: white;
 }
 
-.btn-outline:hover { background: rgba(30, 77, 43, 0.1); }
-.btn-solid:hover { background: #15371E; transform: translateY(-2px); }
+.btn-outline:hover {
+  background: rgba(30, 77, 43, 0.1);
+}
 
-/*  Hero Section  */
+.btn-solid:hover {
+  background: #15371E;
+  transform: translateY(-2px);
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -71,7 +81,6 @@
   padding: 120px 20px;
 }
 
-/* Font */
 .hero-title {
   font-family: 'Space Grotesk', sans-serif;
   color: #1E4D2B;
@@ -81,8 +90,12 @@
   line-height: 1.1;
 }
 
+.italic-text {
+  font-style: italic;
+}
+
 .hero-subtitle {
-  color: #D2691E; 
+  color: #D2691E;
   font-size: 1.2rem;
   margin-bottom: 48px;
 }
@@ -91,15 +104,15 @@
   color: #000;
 }
 
-/* Search */
+
 .search-container {
   display: flex;
   align-items: center;
   gap: 12px;
   background: white;
   padding: 8px;
-  border-radius: 50px; /* Pill shape */
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1); 
+  border-radius: 50px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 650px;
   border: 1px solid #E5E7EB;
@@ -113,6 +126,12 @@
   padding-left: 16px;
 }
 
+.search-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+}
+
 .search-input {
   border: none;
   outline: none;
@@ -122,7 +141,7 @@
 }
 
 .search-button {
-  background: #C4D600; 
+  background: #C4D600;
   border: none;
   border-radius: 50%;
   width: 54px;
